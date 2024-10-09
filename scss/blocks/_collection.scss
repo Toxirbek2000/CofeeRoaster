@@ -1,0 +1,50 @@
+.collection-section {
+    background-color: #F8F8F2;
+    margin: 20px;
+    background-image: url("../images/colletion-bg-top.png"), url("../images/colletion-bg-center-right.png"), url("../images/colletion-bg-down.png");
+    background-repeat: no-repeat;
+    background-position: left top,right center,left bottom;
+    background-size: 402px 300px, 392px 377px, 316px 269px;
+}
+.colletion-title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58.59px;
+    text-align: center;
+    color: #000000;   
+    padding-top: 50px; 
+    padding-bottom: 80px;
+    text-transform: uppercase;
+}
+.colletion-list {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.colletion-item {
+    @include display($space:space-between);
+    gap: 117px;
+}
+.colletion-item-w {
+    width: 400px;
+    & > h3 {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: 56.25px;
+        text-align: left;
+        padding-bottom: 10px;
+        color: #333333;
+        text-transform: uppercase;
+    }
+
+    & > p {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: left;
+        color: #333333;
+    }
+}
+.collection-images {
+    padding-bottom: 50px;
+}
