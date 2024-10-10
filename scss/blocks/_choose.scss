@@ -1,9 +1,11 @@
 .choose-section {
-    background-image: url("../images/choose-bg-logo.svg"),url("../images/choose-bg.png");
+    background-image:url("../images/choose-bg.png");
     background-repeat: no-repeat;
-    background-position: left center,center;
-    background-size: 140px 144px,cover;
+    background-position: center;
+    background-size: cover;
     margin: 20px;
+    height: 703px;
+    position: relative;
 }
 .choose {
     display: flex;
@@ -32,8 +34,17 @@
 .choose__content-list {
     @include display($space:space-between);
     gap: 20px;
+    position: absolute;
+    bottom: -280px;
 }
 .choose__item-wrapper {
+    &:first-child{
+        background-image:  url("../images/choose-bg-logo.svg");
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: 140px 144px;
+    }
+    padding-bottom: 80px;
     width: 433px;
     & > h4{
         font-size: 30px;
